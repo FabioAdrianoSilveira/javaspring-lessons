@@ -16,5 +16,6 @@ Repositório dedicado ao armazenamento de exercícios desenvolvidos durante a au
 ### Ferramentas usadas para teste
 
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [DBeaver (Alternativa ao MySQL Workbench)](https://dbeaver.io/download/)
 - [Postman](https://www.postman.com/downloads/)
 - [Insomnia (Alternativa ao Postman)](https://insomnia.rest/download)
