@@ -14,6 +14,12 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Positive;
+import lombok.Getter;
+import lombok.Setter;
+
+// Uso da biblioteca lombok para remoção de boilerplates (torna a criação manual de getters e setters desnecessária)
+@Getter
+@Setter
 
 @Entity // Indica ao hibernate que essa classe corresponderá a uma tabela do banco
 public class Aluno {
@@ -21,20 +27,25 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.AUTO) // Define que o atributo abaixo deve ser gerado automaticamente
     private @Nullable Integer id; // @Nullable indica que o valor do atributo pode ser nulo
 
-    @NotBlank (message = "O nome do aluno é obrigatório!")
+    @NotBlank(message = "O nome do aluno é obrigatório!")
     private String nome;
-    @NotBlank @Email
+    @NotBlank
+    @Email
     private String email;
-    @NotBlank @CPF
+    @NotBlank
+    @CPF
     private String cpf;
-    @NotNull @Past
+    @NotNull
+    @Past
     private LocalDate dtNasc;
     @NotNull
     private Boolean ativo;
-    @NotNull @Positive
+    @NotNull
+    @Positive
     private float altura;
 
-    public Aluno() {}
+    public Aluno() {
+    }
 
     public Aluno(String nome, String email, String cpf, LocalDate dtNasc, Boolean ativo, float altura) {
         this.nome = nome;
@@ -42,62 +53,6 @@ public class Aluno {
         this.cpf = cpf;
         this.dtNasc = dtNasc;
         this.ativo = ativo;
-        this.altura = altura;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public LocalDate getDtNasc() {
-        return dtNasc;
-    }
-
-    public void setDtNasc(LocalDate dtNasc) {
-        this.dtNasc = dtNasc;
-    }
-
-    public Boolean getAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(Boolean ativo) {
-        this.ativo = ativo;
-    }
-
-    public float getAltura() {
-        return altura;
-    }
-
-    public void setAltura(float altura) {
         this.altura = altura;
     }
 }

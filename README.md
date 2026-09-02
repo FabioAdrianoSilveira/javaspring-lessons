@@ -1,6 +1,6 @@
 # ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
-Repositório dedicado ao armazenamento de exercícios desenvolvidos durante a aula de Linguagem de Programação 2.
+Repositório dedicado ao armazenamento de exercícios desenvolvidos durante a aula de Linguagem de Programação 2
 
 ---
 
@@ -10,11 +10,19 @@ Os projetos ficarão disponíveis na branch main, caso queira consultar algum tr
 
 ### Aula 3
 
-[restservice](https://github.com/FabioAdrianoSilveira/javaspring-lessons/tree/main/restservice): Projeto de construção de API REST com endpoint do tipo GET.
+[restservice](https://github.com/FabioAdrianoSilveira/javaspring-lessons/tree/main/restservice): Projeto de construção de API REST com endpoint do tipo GET
 
 ### Aula 4
 
 [demo-api](https://github.com/FabioAdrianoSilveira/javaspring-lessons/tree/main/demo-api): Projeto de construção de API REST com endpoints dos tipos GET e POST
+
+### Aula 5
+
+[demo-api](https://github.com/FabioAdrianoSilveira/javaspring-lessons/tree/main/demo-api): Projeto de construção de API REST com todos os endpoints necessários para cadastro, consulta, alteração e delete de alunos
+
+### Aula 6
+
+[demo-jsf](https://github.com/FabioAdrianoSilveira/javaspring-lessons/tree/main/demo-jsf): Inicio do front-end JSF que consumirá demo-api
 
 ## :hammer_and_pick: Ferramentas
 
